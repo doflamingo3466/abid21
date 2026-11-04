@@ -1,0 +1,94 @@
+
+* {
+    margin: 0.3%;
+    padding: 0.3%;
+}
+
+section {
+    background-color: rgb(221, 230, 240);
+    border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+button {
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.form-grid {
+    background-color: rgb(181, 192, 202);
+    display: grid;
+    border-radius: 10px;
+}
+
+input {
+    width: 110px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.description, p {
+    color: rgb(35, 89, 206);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.summary-card {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(173, 198, 227);
+    box-shadow: 40px;
+    border-radius: 10px;
+}
+
+.summary-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.panel {
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid gray;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+#search, #filter {
+    margin: 10px;
+}
+
+@media(max-width: 700px) {
+    section {
+        width: 95%;
+        margin-left: 1%;
+    }
+
+    .summary-grid {
+        flex-wrap: wrap;
+    }
+
+    
+}

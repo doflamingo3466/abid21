@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="expenses" class="project">
+
+        <div class="section-heading">
+            <div>
+                <h2>Expense Tracker</h2>
+            </div>
+        </div>
+
+        <p class="description">Record your spendings</p>
+
+        <div class="summary-grid">
+
+            <div class="summary-card">
+                <p>Total spent</p>
+                <h3 id="expenseTotal">Rs 0</h3>
+            </div>
+
+            <div class="summary-card">
+                <p>Number of expenses</p>
+                <h3 id="expenseCount">0</h3>
+            </div>
+
+            <div class="summary-card">
+                <p>Highest expense</p>
+                <h3 id="highest">Rs 0</h3>
+            </div>
+
+        </div>
+
+        <form id="expenseForm" class="panel">
+
+            <div class="form-grid">
+
+                <label>Expense name
+                    <input type="text" id="expenseName" required placeholder=" Lunch">
+                </label>
+
+                <label>Amount in PKR
+                    <input type="number" id="expenseAmount" required placeholder="500">
+                </label>
+
+                <label>Category
+                    <select id="expenseCategory" required>
+                        <option value="">Choose category</option>
+                        <option value="Food">Food</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <label>Date
+                    <input type="date" id="expenseDate" required>
+                </label>
+
+            </div>
+
+            <button type="submit" id="saveBtn">Save expense</button>
+            <button type="button" id="cancelBtn" hidden>Cancel</button>
+
+        </form>
+
+        <div class="panel">
+
+            <h3>Expense history</h3>
+
+            <div class="table-wrap">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expenseList"></tbody>
+                </table>
+
+            </div>
+
+            <p id="expenseEmpty" class="empty">No expense</p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
